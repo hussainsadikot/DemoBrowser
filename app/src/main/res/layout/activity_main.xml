@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+<!--    <Button-->
+<!--        android:id="@+id/button_add_item"-->
+<!--        android:layout_width="60dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:background="@drawable/ic_add_circle"-->
+<!--        android:layout_alignRight="@id/recycler_view"/>-->
+
+    <TextView
+        android:id="@+id/tv_title_from_User"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Here will be Title"
+        android:layout_below="@id/recycler_view"
+        android:layout_margin="16dp"
+
+
+        />
+    <TextView
+        android:id="@+id/tv_web_address_from_User"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Here will be Website Address"
+        android:layout_below="@id/tv_title_from_User"
+        android:layout_margin="16dp"
+
+
+        />
+    <Button
+        android:id="@+id/button_in_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_web_address_from_User"/>
+
+
+</RelativeLayout>

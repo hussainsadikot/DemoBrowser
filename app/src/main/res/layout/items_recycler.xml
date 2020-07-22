@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_layout">
+
+        <RelativeLayout
+            android:id="@+id/layout_for_icon_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="false"
+                android:layout_centerHorizontal="true"
+                android:scaleType="center"
+                android:src="@drawable/ic_android"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon"
+                android:text="Add Link"
+                android:textColor="@android:color/black"
+                android:textSize="8sp"
+                android:layout_centerHorizontal="true"
+
+                />
+        </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_close"
+                android:layout_alignRight="@id/layout_for_icon_text"
+                android:visibility="invisible"
+                />
+        </RelativeLayout>
+
+</RelativeLayout>
